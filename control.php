@@ -251,12 +251,19 @@ function kraken_coins($name,$jkl,$i_e,$mantik){
               $wd_comfirmation=$row_wd['duration_comfirmations'];
               $wd_cost=$row_wd['withdraw_fee'];
               $wd_cost_usd=$row_wd['withdraw_fee'] * $max_gain['straight']['price1'];
+
+              echo "here 1 wd_cost ";
+              echo $wd_cost;
               }
               
               if($row_wd['name']==$max_gain['straight']['coin_sec']){
               $wd_duration_2=$row_wd['duration_minutes'];
               $wd_comfirmation_2=$row_wd['duration_comfirmations'];
               $wd_cost_2=$row_wd['withdraw_fee'];
+
+
+              echo "here 2 wd_cost_2 ";
+              echo $wd_cost_2; 
               $wd_cost_usd_2=$row_wd['withdraw_fee'] * $max_gain['straight']['price1_sec'];
               }
           }
