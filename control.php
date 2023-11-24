@@ -40,7 +40,7 @@ function btcturk_coins($i_s,$i_e,$mantik){
 //  echo "here -> ";
       global $dbc;
       
-$mantikli1=array('ATOM','EOS','FTM','FET','XRP','SOL','XLM','LUNA','LUNC','BTC','AVAX','TRX','ADA','FIL','DOT','USDT','ALGO','XTZ');
+$mantikli1=array('ATOM','EOS','FTM','FET','XRP','SOL','XLM','BTC','AVAX','TRX','ADA','FIL','DOT','USDT','ALGO','XTZ');
 $mantikli2=array('APT','APE','GALA','AAVE','ANKR','APE','AUDIO','AXS','BNT','BAT','LINK','CHZ','CVC','COMP','CRV','MANA','ENJ','ETH','ENS','IMX','LPT','LRC','MKR','OMG','PAXG','PLA','MATIC','QNT','SHIB','SPELL','STORJ','SNX','GRT','SAND','UNI','UMA','USDC');
 $mantikli3=array('ETHW','ETC','RLC','RNDR','LTC','DOGE','DASH');
 
