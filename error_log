@@ -1,0 +1,149 @@
+[12-Feb-2019 00:29:15 Europe/Istanbul] PHP Fatal error:  Call to undefined function get_cur_date_from_db() in /home/musterdi/public_html/dyno4/cycle2.php on line 95
+[12-Feb-2019 00:47:52 Europe/Istanbul] PHP Fatal error:  Call to undefined function slack() in /home/musterdi/public_html/dyno4/cycle.php on line 98
+[11-Feb-2019 16:10:10 America/Chicago] PHP Fatal error:  Cannot redeclare slack() (previously declared in /home/musterdi/public_html/dyno4/includes/send_slack_message.php:5) in /home/musterdi/public_html/dyno4/includes/send_slack_message.php on line 14
+[11-Feb-2019 16:10:15 America/Chicago] PHP Fatal error:  Cannot redeclare slack() (previously declared in /home/musterdi/public_html/dyno4/includes/send_slack_message.php:5) in /home/musterdi/public_html/dyno4/includes/send_slack_message.php on line 14
+[11-Feb-2019 16:21:12 America/Chicago] PHP Fatal error:  Cannot redeclare slack() (previously declared in /home/musterdi/public_html/dyno4/includes/send_slack_message.php:5) in /home/musterdi/public_html/dyno4/includes/send_slack_message.php on line 14
+[12-Feb-2019 09:39:05 Europe/Istanbul] PHP Fatal error:  Call to undefined function get_cur_date_from_db() in /home/musterdi/public_html/dyno4/cycle2.php on line 95
+[13-Feb-2019 18:20:23 Europe/Istanbul] PHP Fatal error:  Call to undefined function get_cur_date_from_db() in /home/musterdi/public_html/dyno4/cycle.php on line 95
+[13-Feb-2019 18:20:23 Europe/Istanbul] PHP Fatal error:  Call to undefined function get_cur_date_from_db() in /home/musterdi/public_html/dyno4/cycle5.php on line 95
+[14-Feb-2019 03:30:04 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/musterdi/public_html/dyno4/includes/functions.php on line 533
+[14-Feb-2019 03:30:05 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/musterdi/public_html/dyno4/includes/functions.php on line 533
+[14-Feb-2019 03:30:07 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/musterdi/public_html/dyno4/includes/functions.php on line 533
+[14-Feb-2019 03:30:09 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/musterdi/public_html/dyno4/includes/functions.php on line 533
+[14-Feb-2019 03:30:10 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/musterdi/public_html/dyno4/includes/functions.php on line 533
+[14-Feb-2019 03:31:38 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/musterdi/public_html/dyno4/includes/functions.php on line 533
+[17-Feb-2019 14:31:25 America/Chicago] PHP Parse error:  syntax error, unexpected '$market2_pairs' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions.php on line 438
+[17-Feb-2019 14:31:25 America/Chicago] PHP Parse error:  syntax error, unexpected '$market2_pairs' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions.php on line 438
+[17-Feb-2019 14:31:27 America/Chicago] PHP Parse error:  syntax error, unexpected '$market2_pairs' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions.php on line 438
+[17-Feb-2019 14:31:28 America/Chicago] PHP Parse error:  syntax error, unexpected '$market2_pairs' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions.php on line 438
+[17-Feb-2019 14:31:28 America/Chicago] PHP Parse error:  syntax error, unexpected '$market2_pairs' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions.php on line 438
+[17-Feb-2019 14:31:40 America/Chicago] PHP Parse error:  syntax error, unexpected '$market2_pairs' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions.php on line 438
+[17-Feb-2019 14:31:44 America/Chicago] PHP Parse error:  syntax error, unexpected '$market2_pairs' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions.php on line 438
+[17-Feb-2019 15:07:48 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/musterdi/public_html/dyno4/includes/functions.php on line 629
+[18-Feb-2019 00:10:25 Europe/Istanbul] PHP Fatal error:  Call to undefined function get_cur_date_from_db() in /home/musterdi/public_html/dyno4/cycle_xrp.php on line 86
+[18-Feb-2019 00:36:33 Europe/Istanbul] PHP Fatal error:  Call to undefined function get_cur_date_from_db() in /home/musterdi/public_html/dyno4/cycle_xlm.php on line 86
+[18-Feb-2019 00:36:34 Europe/Istanbul] PHP Fatal error:  Call to undefined function get_cur_date_from_db() in /home/musterdi/public_html/dyno4/cycle_ltc.php on line 86
+[18-Feb-2019 00:56:05 Europe/Istanbul] PHP Fatal error:  Call to undefined function get_cur_date_from_db() in /home/musterdi/public_html/dyno4/cycle_btc.php on line 86
+[18-Feb-2019 11:24:08 Europe/Istanbul] PHP Fatal error:  Call to undefined function get_cur_date_from_db() in /home/musterdi/public_html/dyno4/cycle_xrp.php on line 88
+[18-Feb-2019 02:24:10 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/musterdi/public_html/dyno4/includes/functions.php on line 440
+[18-Feb-2019 02:24:11 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/musterdi/public_html/dyno4/includes/functions.php on line 440
+[18-Feb-2019 02:24:12 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/musterdi/public_html/dyno4/includes/functions.php on line 440
+[18-Feb-2019 02:24:13 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/musterdi/public_html/dyno4/includes/functions.php on line 440
+[18-Feb-2019 22:10:53 Europe/Istanbul] PHP Fatal error:  Call to undefined function get_cur_date_from_db() in /home/musterdi/public_html/dyno4/cycle_btc.php on line 89
+[19-Feb-2019 14:21:42 Europe/Istanbul] PHP Fatal error:  Call to undefined function get_cur_date_from_db() in /home/musterdi/public_html/dyno4/cycle_xlm.php on line 88
+[19-Feb-2019 18:53:44 Europe/Istanbul] PHP Fatal error:  Call to undefined function get_cur_date_from_db() in /home/musterdi/public_html/dyno4/cycle_xlm.php on line 88
+[26-Feb-2019 08:23:03 America/Chicago] PHP Parse error:  syntax error, unexpected '$market_data' (T_VARIABLE) in /home/musterdi/public_html/dyno4/cycle_btc.php on line 76
+[26-Feb-2019 08:26:50 America/Chicago] PHP Parse error:  syntax error, unexpected '$market_data' (T_VARIABLE) in /home/musterdi/public_html/dyno4/cycle_btc.php on line 76
+[26-Feb-2019 08:26:56 America/Chicago] PHP Parse error:  syntax error, unexpected '$market_data' (T_VARIABLE) in /home/musterdi/public_html/dyno4/cycle_btc.php on line 76
+[26-Feb-2019 08:27:01 America/Chicago] PHP Parse error:  syntax error, unexpected '$market_data' (T_VARIABLE) in /home/musterdi/public_html/dyno4/cycle_btc.php on line 76
+[26-Feb-2019 08:27:02 America/Chicago] PHP Parse error:  syntax error, unexpected '$market_data' (T_VARIABLE) in /home/musterdi/public_html/dyno4/cycle_btc.php on line 76
+[26-Feb-2019 08:27:29 America/Chicago] PHP Parse error:  syntax error, unexpected '$market_data' (T_VARIABLE) in /home/musterdi/public_html/dyno4/cycle_btc.php on line 76
+[04-Apr-2019 13:03:25 Europe/Istanbul] PHP Strict Standards:  mysqli_next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/musterdi/public_html/dyno4/includes/functions.php on line 111
+[04-Apr-2019 13:03:25 Europe/Istanbul] PHP Fatal error:  Call to undefined function update_gain_control() in /home/musterdi/public_html/dyno4/gain_control.php on line 169
+[04-Apr-2019 13:03:28 Europe/Istanbul] PHP Strict Standards:  mysqli_next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/musterdi/public_html/dyno4/includes/functions.php on line 111
+[04-Apr-2019 13:03:28 Europe/Istanbul] PHP Fatal error:  Call to undefined function update_gain_control() in /home/musterdi/public_html/dyno4/gain_control.php on line 169
+[04-Apr-2019 13:06:06 Europe/Istanbul] PHP Fatal error:  Call to undefined function update_gain_control() in /home/musterdi/public_html/dyno4/gain_control.php on line 169
+[04-Apr-2019 11:15:34 America/Chicago] PHP Parse error:  syntax error, unexpected '*' in /home/musterdi/public_html/dyno4/gain_control.php on line 205
+[04-Apr-2019 19:15:49 Europe/Istanbul] PHP Strict Standards:  mysqli_next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/musterdi/public_html/dyno4/includes/functions2.php on line 111
+[04-Apr-2019 19:16:30 Europe/Istanbul] PHP Strict Standards:  mysqli_next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/musterdi/public_html/dyno4/includes/functions2.php on line 111
+[04-Apr-2019 19:16:32 Europe/Istanbul] PHP Strict Standards:  mysqli_next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/musterdi/public_html/dyno4/includes/functions2.php on line 111
+[04-Apr-2019 19:17:16 Europe/Istanbul] PHP Strict Standards:  mysqli_next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/musterdi/public_html/dyno4/includes/functions2.php on line 111
+[04-Apr-2019 19:19:10 Europe/Istanbul] PHP Strict Standards:  mysqli_next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/musterdi/public_html/dyno4/includes/functions2.php on line 111
+[04-Apr-2019 19:19:13 Europe/Istanbul] PHP Strict Standards:  mysqli_next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/musterdi/public_html/dyno4/includes/functions2.php on line 111
+[04-Apr-2019 19:19:27 Europe/Istanbul] PHP Strict Standards:  mysqli_next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/musterdi/public_html/dyno4/includes/functions2.php on line 111
+[04-Apr-2019 11:20:59 America/Chicago] PHP Warning:  Unterminated comment starting line 613 in /home/musterdi/public_html/dyno4/includes/functions2.php on line 613
+[04-Apr-2019 11:20:59 America/Chicago] PHP Parse error:  syntax error, unexpected '',2);' (T_ENCAPSED_AND_WHITESPACE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 614
+[05-Apr-2019 08:09:16 America/Chicago] PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY) in /home/musterdi/public_html/dyno4/gain_control.php on line 196
+[05-Apr-2019 08:10:39 America/Chicago] PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY) in /home/musterdi/public_html/dyno4/gain_control.php on line 196
+[05-Apr-2019 08:10:42 America/Chicago] PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY) in /home/musterdi/public_html/dyno4/gain_control.php on line 196
+[05-Apr-2019 08:52:48 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/musterdi/public_html/dyno4/gain_control.php on line 200
+[05-Apr-2019 17:04:21 Europe/Istanbul] PHP Fatal error:  Call to undefined function get_cur_date_from_db() in /home/musterdi/public_html/dyno4/gain_control.php on line 66
+[05-Apr-2019 09:04:23 America/Chicago] PHP Warning:  Unterminated comment starting line 313 in /home/musterdi/public_html/dyno4/includes/functions2.php on line 313
+[05-Apr-2019 09:04:23 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/musterdi/public_html/dyno4/includes/functions2.php on line 316
+[10-Apr-2019 10:27:27 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:28:00 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:28:06 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:28:09 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:28:35 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:30:02 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:31:12 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:31:15 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:32:29 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:33:49 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:33:51 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:35:01 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:35:42 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:35:43 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:35:48 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:37:22 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:37:24 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:37:26 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:37:30 America/Chicago] PHP Parse error:  syntax error, unexpected '$r' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 127
+[10-Apr-2019 10:37:49 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/musterdi/public_html/dyno4/includes/functions2.php on line 231
+[10-Apr-2019 10:37:52 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/musterdi/public_html/dyno4/includes/functions2.php on line 231
+[10-Apr-2019 10:38:38 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/musterdi/public_html/dyno4/includes/functions2.php on line 228
+[10-Apr-2019 10:42:19 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/musterdi/public_html/dyno4/includes/functions2.php on line 235
+[10-Apr-2019 18:43:20 Europe/Istanbul] PHP Fatal error:  Function name must be a string in /home/musterdi/public_html/dyno4/includes/functions2.php on line 196
+[10-Apr-2019 10:58:00 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/musterdi/public_html/dyno4/includes/functions2.php on line 630
+[11-Apr-2019 10:39:12 Europe/Istanbul] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/musterdi/public_html/dyno4/includes/functions2.php on line 142
+[11-Apr-2019 10:41:46 Europe/Istanbul] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/musterdi/public_html/dyno4/includes/functions2.php on line 143
+[11-Apr-2019 10:43:18 Europe/Istanbul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/musterdi/public_html/dyno4/includes/functions2.php on line 137
+[11-Apr-2019 10:43:18 Europe/Istanbul] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/musterdi/public_html/dyno4/includes/functions2.php on line 153
+[11-Apr-2019 10:46:11 Europe/Istanbul] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/musterdi/public_html/dyno4/includes/functions2.php on line 136
+[11-Apr-2019 10:46:11 Europe/Istanbul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/musterdi/public_html/dyno4/includes/functions2.php on line 153
+[11-Apr-2019 10:46:11 Europe/Istanbul] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/musterdi/public_html/dyno4/includes/functions2.php on line 169
+[11-Apr-2019 10:48:18 Europe/Istanbul] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/musterdi/public_html/dyno4/includes/functions2.php on line 136
+[11-Apr-2019 10:48:18 Europe/Istanbul] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'localhost:3306' (0) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 152
+[11-Apr-2019 10:48:18 Europe/Istanbul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/musterdi/public_html/dyno4/includes/functions2.php on line 157
+[11-Apr-2019 10:48:18 Europe/Istanbul] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/musterdi/public_html/dyno4/includes/functions2.php on line 177
+[11-Apr-2019 10:48:25 Europe/Istanbul] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/musterdi/public_html/dyno4/includes/functions2.php on line 136
+[11-Apr-2019 10:48:25 Europe/Istanbul] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'localhost:3306' (0) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 152
+[11-Apr-2019 10:48:25 Europe/Istanbul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/musterdi/public_html/dyno4/includes/functions2.php on line 157
+[11-Apr-2019 10:48:25 Europe/Istanbul] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/musterdi/public_html/dyno4/includes/functions2.php on line 177
+[11-Apr-2019 10:48:48 Europe/Istanbul] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'localhost:3306' (0) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 152
+[11-Apr-2019 10:48:48 Europe/Istanbul] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/musterdi/public_html/dyno4/includes/functions2.php on line 157
+[11-Apr-2019 10:48:48 Europe/Istanbul] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/musterdi/public_html/dyno4/includes/functions2.php on line 177
+[11-Apr-2019 09:43:34 America/Chicago] PHP Parse error:  syntax error, unexpected 'Row' (T_STRING) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 231
+[11-Apr-2019 09:45:08 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/musterdi/public_html/dyno4/gain_control.php on line 245
+[11-Apr-2019 09:52:59 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/musterdi/public_html/dyno4/includes/functions2.php on line 383
+[11-Apr-2019 09:57:37 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/musterdi/public_html/dyno4/includes/functions2.php on line 398
+[11-Apr-2019 09:57:40 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/musterdi/public_html/dyno4/includes/functions2.php on line 398
+[11-Apr-2019 10:11:08 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/musterdi/public_html/dyno4/includes/functions2.php on line 990
+[11-Apr-2019 10:47:34 America/Chicago] PHP Parse error:  syntax error, unexpected ''XLM' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/musterdi/public_html/dyno4/includes/functions2.php on line 342
+[11-Apr-2019 10:50:10 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/musterdi/public_html/dyno4/includes/functions2.php on line 465
+[11-Apr-2019 10:50:13 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/musterdi/public_html/dyno4/includes/functions2.php on line 465
+[11-Apr-2019 10:50:36 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/musterdi/public_html/dyno4/includes/functions2.php on line 465
+[11-Apr-2019 10:59:40 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 403
+[11-Apr-2019 10:59:42 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 403
+[11-Apr-2019 11:00:30 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/musterdi/public_html/dyno4/includes/functions2.php on line 1337
+[11-Apr-2019 11:00:45 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/musterdi/public_html/dyno4/includes/functions2.php on line 1337
+[11-Apr-2019 11:02:03 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/musterdi/public_html/dyno4/includes/functions2.php on line 1337
+[19-Apr-2019 15:13:55 Europe/Istanbul] PHP Fatal error:  Call to undefined method HanischIt\KrakenApi\Call\Shared\Model\OrderModel::getPair() in /home/musterdi/public_html/dyno4/includes/functions2.php on line 112
+[19-Apr-2019 15:20:35 Europe/Istanbul] PHP Fatal error:  Call to undefined method HanischIt\KrakenApi\Call\Shared\Model\OrderModel::getType() in /home/musterdi/public_html/dyno4/includes/functions2.php on line 113
+[19-Apr-2019 15:20:52 Europe/Istanbul] PHP Fatal error:  Call to undefined method HanischIt\KrakenApi\Call\Shared\Model\OrderModel::getOrderType() in /home/musterdi/public_html/dyno4/includes/functions2.php on line 114
+[19-Apr-2019 15:24:47 Europe/Istanbul] PHP Fatal error:  Cannot use object of type HanischIt\KrakenApi\Call\Shared\Model\OrderModel as array in /home/musterdi/public_html/dyno4/includes/functions2.php on line 115
+[19-Apr-2019 15:25:13 Europe/Istanbul] PHP Fatal error:  Cannot access private property HanischIt\KrakenApi\Call\Shared\Model\OrderModel::$orderDetails in /home/musterdi/public_html/dyno4/includes/functions2.php on line 115
+[23-Apr-2019 22:34:13 Europe/Istanbul] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/musterdi/public_html/dyno4/includes/functions2.php on line 98
+[23-Apr-2019 22:34:19 Europe/Istanbul] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/musterdi/public_html/dyno4/includes/functions2.php on line 98
+[23-Apr-2019 14:44:24 America/Chicago] PHP Fatal error:  Cannot redeclare parse_open_orders_from_market_data() (previously declared in /home/musterdi/public_html/dyno4/includes/functions2.php:90) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 143
+[23-Apr-2019 15:09:19 America/Chicago] PHP Parse error:  syntax error, unexpected '[', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/musterdi/public_html/dyno4/includes/functions2.php on line 218
+[23-Apr-2019 15:09:41 America/Chicago] PHP Parse error:  syntax error, unexpected '[', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/musterdi/public_html/dyno4/includes/functions2.php on line 218
+[23-Apr-2019 15:19:19 America/Chicago] PHP Parse error:  syntax error, unexpected '$i' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 236
+[23-Apr-2019 15:19:23 America/Chicago] PHP Parse error:  syntax error, unexpected '$i' (T_VARIABLE) in /home/musterdi/public_html/dyno4/includes/functions2.php on line 236
+[15-May-2019 17:14:29 Europe/Istanbul] PHP Fatal error:  Call to undefined function get_cur_date_from_db() in /home/musterdi/public_html/dyno4/cycle_xlm.php on line 89
+[15-May-2019 09:14:31 America/Chicago] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ';' in /home/musterdi/public_html/dyno4/includes/functions.php on line 639
+[15-May-2019 09:14:32 America/Chicago] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ';' in /home/musterdi/public_html/dyno4/includes/functions.php on line 639
+[15-May-2019 09:14:32 America/Chicago] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ';' in /home/musterdi/public_html/dyno4/includes/functions.php on line 639
+[15-May-2019 09:14:33 America/Chicago] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ';' in /home/musterdi/public_html/dyno4/includes/functions.php on line 639
+[15-May-2019 09:14:38 America/Chicago] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ';' in /home/musterdi/public_html/dyno4/includes/functions.php on line 639
+[15-May-2019 09:14:40 America/Chicago] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ';' in /home/musterdi/public_html/dyno4/includes/functions.php on line 639
+[15-May-2019 09:18:15 America/Chicago] PHP Parse error:  syntax error, unexpected '.' in /home/musterdi/public_html/dyno4/includes/functions.php on line 642
+[15-May-2019 09:18:15 America/Chicago] PHP Parse error:  syntax error, unexpected '.' in /home/musterdi/public_html/dyno4/includes/functions.php on line 642
+[15-May-2019 09:18:18 America/Chicago] PHP Parse error:  syntax error, unexpected '.' in /home/musterdi/public_html/dyno4/includes/functions.php on line 642
+[15-May-2019 19:12:39 Europe/Istanbul] PHP Fatal error:  Call to undefined function get_cur_date_from_db() in /home/musterdi/public_html/dyno4/cycle_xrp.php on line 88
+[21-May-2019 10:33:45 Europe/Istanbul] PHP Fatal error:  Cannot use object of type HanischIt\KrakenApi\Call\Shared\Model\OrderModel as array in /home/musterdi/public_html/dyno4/includes/functions.php on line 283
+[21-May-2019 10:34:12 Europe/Istanbul] PHP Fatal error:  Cannot use object of type HanischIt\KrakenApi\Call\Shared\Model\OrderModel as array in /home/musterdi/public_html/dyno4/includes/functions.php on line 283
+[21-May-2019 10:34:20 Europe/Istanbul] PHP Fatal error:  Cannot use object of type HanischIt\KrakenApi\Call\Shared\Model\OrderModel as array in /home/musterdi/public_html/dyno4/includes/functions.php on line 283
+[21-May-2019 10:34:45 Europe/Istanbul] PHP Fatal error:  Cannot use object of type HanischIt\KrakenApi\Call\Shared\Model\OrderModel as array in /home/musterdi/public_html/dyno4/includes/functions.php on line 283
+[21-May-2019 10:38:27 Europe/Istanbul] PHP Fatal error:  Cannot use object of type HanischIt\KrakenApi\Call\Shared\Model\OrderModel as array in /home/musterdi/public_html/dyno4/includes/functions.php on line 285
+[24-May-2019 02:38:15 America/Chicago] PHP Parse error:  syntax error, unexpected '0' (T_LNUMBER) in /home/musterdi/public_html/dyno4/cycle_match.php on line 374
