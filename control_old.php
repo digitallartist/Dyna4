@@ -1,14 +1,13 @@
 
 <?php
 
-@error_reporting(E_ALL & ~E_NOTICE);
-  @ini_set('error_reporting', E_ALL & ~E_NOTICE);
-  @ini_set('display_errors', '1');
-  @ini_set('display_startup_errors', '1');
-  @ini_set('ignore_repeated_errors', '1');
+error_reporting(0);
+ini_set('error_reporting', E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED);
+@ini_set('display_errors', 0);
 
 
-  
+
+
 include ("includes/main_lib.php");
 include("includes/db_connect.php");
 putenv("TZ=Europe/Istanbul");
@@ -23,45 +22,9 @@ $max_gain['reverse']['rate']=-100;
 $max_gain['reverse']['price1']=0;
 $max_gain['reverse']['price2']=0;
 
-
-$i_s=0;
-$i_e=2000;
-if(isset($_GET['s']))
-  $i_s=$_GET['s'];
-if(isset($_GET['e']))
-  $i_e=$_GET['e'];
-  
-$mantik=0;
-if(isset($_GET['mantik']))
-$mantik=$_GET['mantik'];
-
-
-function btcturk_coins($i_s,$i_e,$mantik){
+function btcturk_coins(){
 //  echo "here -> ";
       global $dbc;
-      
-$mantikli1=array('ATOM','EOS','FTM','FET','XRP','SOL','XLM','LUNA','LUNC','BTC','AVAX','TRX','ADA','FIL','DOT','USDT','ALGO','XTZ');
-$mantikli2=array('APT','APE','GALA','AAVE','ANKR','APE','AUDIO','AXS','BNT','BAT','LINK','CHZ','CVC','COMP','CRV','MANA','ENJ','ETH','ENS','IMX','LPT','LRC','MKR','OMG','PAXG','PLA','MATIC','QNT','SHIB','SPELL','STORJ','SNX','GRT','SAND','UNI','UMA','USDC');
-$mantikli3=array('ETHW','ETC','RLC','RNDR','LTC','DOGE','DASH');
-
-$mantikli_dizi=array();
-if($mantik==1)
-  $mantikli_dizi=array_merge($mantikli1);
-else if($mantik==2)
-  $mantikli_dizi=array_merge($mantikli1,$mantikli2);
-  else if($mantik==3)
-    $mantikli_dizi=array_merge($mantikli1,$mantikli2,$mantikli3);
-    
-    
-    
-    if(count($mantikli_dizi)>0) {
-      $jkl=0;
-        for($i=0;$i<count($mantikli_dizi);$i++) {
-          $jkl++;
-          kraken_coins($mantikli_dizi[$i],$jkl,$i_e,$mantik);
-        }
-    } else {
-
       //$url="https://api.btcturk.com/api/v2/server/exchangeinfo";
       //$json = file_get_contents($url);
         //var_dump($json);
@@ -69,7 +32,7 @@ else if($mantik==2)
   
   
         $urlm = "https://api.btcturk.com/api/v2/server/exchangeinfo";
-        /*
+    
         $ch = curl_init();
         $timeout = 5;
 
@@ -80,13 +43,16 @@ else if($mantik==2)
         curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
 
         $data = curl_exec($ch);
-        //$datam=substr($data , 1, -1);
-        //$datam=substr($datam, 2);
+      //  $datam=substr($data , 1, -1);
+      //  $datam=substr($datam, 2);
+      //  var_dump($data);
         $json_data=json_decode($data, TRUE);
-        echo "mamaam".$json_data;
+
         curl_close($ch);
-        */
         
+        $a_timestamp=substr($json_data['data']['serverTime'], 0,10);
+      //  echo   $a_timestamp ."<br/>";
+        /*
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $urlm);
         curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -94,99 +60,62 @@ else if($mantik==2)
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // For HTTPS
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false); // For HTTPS
         $response=curl_exec($ch);
-          $json_data=json_decode($response, TRUE);
-      //  echo $response; //
+        echo $response; // Google's HTML source will be printed
         curl_close($ch);
+        */
         
   
     
-      $i=0;
-      $jkl=0;
-      for($i=0;$i<count($json_data['data']['symbols']);$i++) {
-    //  echo $json_data['data']['symbols'][$i]['denominator'] . " " . $json_data['data']['symbols'][$i]['numerator'];
-    //  echo "<br/>";
-        if($json_data['data']['symbols'][$i]['denominator']=="TRY"){
-          $jkl++;
+        echo  date('Y-m-d H:i:s', $a_timestamp) . "<br/>" ;
         
-          //  echo "". $json_data['data']['symbols'][$i]['numerator']."<br/>";
-            //  echo "<br/>".date('Y-m-d H:i:s', $a_timestamp);
-            if($jkl>=$i_s && $jkl<=$i_e)
-            kraken_coins($json_data['data']['symbols'][$i]['numerator'],$jkl,$i_e,$mantik);
+      for($i=0;$i<count($json_data['data']['symbols']);$i++) {
+            //  echo "". $json_data['data']['symbols'][$i]['numerator']."<br/>";
+		         
+  
+          if($json_data['data']['symbols'][$i]['denominator']=="TRY"){
+            kraken_coins($json_data['data']['symbols'][$i]['numerator']);
+            
+            //echo $json_data['data']['symbols'][$i]['numerator'] . "<br/>";
           }
           
       }
-    }
 }
 
 $say=0;
-function kraken_coins($name,$jkl,$i_e,$mantik){
+function kraken_coins($name){
     global $max_gain;
     global $say;
     global $dbc;
-    
+    usleep(200000);
     $say++;
     
     //  if($say<2){
-    //  usleep(300000); // sleep 0,3 seconds
-    $name_control=$name;
-    
-    if($name=='LUNA')
-    $name_control='LUNA2';
-    
-    if($name=='LUNC')
-    $name_control='LUNA';
-    
-      $url="https://api.kraken.com/0/public/AssetPairs?pair=" . $name_control . "USD";
+
+      $url="https://api.kraken.com/0/public/AssetPairs?pair=" . $name . "USD";
       $json = file_get_contents($url);
       $json_data = json_decode($json, true);
 
-      //var_dump($json_data['error']);
-      if(count($json_data['error'])==0) {
-
-      $urlm = "https://www.sansmetre.com/dyno4/cycle_all.php?m1=".$name;
-      //  $urlm = "https://www.google.com";
-
-      $curl = curl_init();
-
-
-      curl_setopt_array($curl, array(
-        CURLOPT_URL => $urlm,
-        CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_ENCODING => "",
-        CURLOPT_MAXREDIRS => 10,
-        CURLOPT_TIMEOUT => 30,
-        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-        CURLOPT_CUSTOMREQUEST => "GET",
-        CURLOPT_SSL_VERIFYHOST => FALSE,
-        CURLOPT_SSL_VERIFYPEER => FALSE,
-        CURLOPT_HTTPHEADER => array(
-          "Cache-Control: no-cache"
-        ),
-      ));
-
-      $data = curl_exec($curl);
-      $err = curl_error($curl);
-
-      curl_close($curl);
-
+  //var_dump($json_data);
+      if($json_data['error'][0]=="") {
       
-    //  echo $data;
+      $urlm = "http://www.atlasport.net/dyno4/cycle_all.php?m1=" . $name;
+      
+      $ch = curl_init();
+      $timeout = 5;
+
+      curl_setopt($ch, CURLOPT_URL, $urlm);
+      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+      curl_setopt($ch, CURLOPT_HEADER, false);
+      curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+
+      $data = curl_exec($ch);
       $datam=substr($data , 1, -1);
       $datam=substr($datam, 2);
       $datam2=json_decode($datam, TRUE);
-    //  echo "<br/>";
-    
-
-  
-    //  var_dump($datam2);
-    
-    
-    $q5u="UPDATE withdraw_durations SET current_price='" .  $datam2['straight']['price'] . "', withdraw_fee_usd=withdraw_fee*" .  $datam2['straight']['price'] . " WHERE name='" . $name . "'";
-    $r5u = @mysqli_query ($dbc, $q5u); // Run the query.
-
-
-
-      echo  $name ;
+      curl_close($ch);
+      
+      echo " " . $name;
   
       echo " -> " .  print_ytl($datam2['straight']['price'],4,'USD');
       echo "<br/>";
@@ -228,7 +157,7 @@ function kraken_coins($name,$jkl,$i_e,$mantik){
         $max_gain['reverse']['price1']=$datam2['straight']['price'];
         $max_gain['reverse']['price2']=$datam2['reverse']['price'];
       }
-      if(($mantik<=1 && $name=="XTZ") || ($mantik==2 && $name=="USDC") ||  ($mantik==3 && $name=="DASH") ||  $jkl==$i_e ){
+      if($name=="XTZ"){
         
         $q5="SELECT * FROM withdraw_data";
         $r5 = @mysqli_query ($dbc, $q5); // Run the query.
@@ -240,8 +169,6 @@ function kraken_coins($name,$jkl,$i_e,$mantik){
         $wd_comfirmation_2="";
         $wd_cost_usd_2="";
         $wd_cost_2="";
-        
-        var_dump($max_gain);
 
           while($row_wd = mysqli_fetch_array ($r5, MYSQLI_ASSOC)){
               if($row_wd['name']==$max_gain['straight']['coin']){
@@ -277,7 +204,7 @@ function kraken_coins($name,$jkl,$i_e,$mantik){
           echo "Süre 2 : <b>" .$wd_duration_2 . " dakika -> </b>" . $wd_comfirmation_2 . " doğrulama" ;
     
         echo "<br/><br/>";
-          echo "Ters: <b>" . $max_gain['reverse']['coin'] . "</b> Oran: <b>" . $max_gain['reverse']['rate']."</b> AL @ <b>" .   print_ytl($max_gain['reverse']['price2'],4,'TL')."</b> ---> SAT @ <b>" .   print_ytl($max_gain['reverse']['price1'],4,'USD') ."</b>";
+        echo "Ters: <b>" . $max_gain['reverse']['coin'] . "</b> Oran: <b>" . $max_gain['reverse']['rate']."</b> AL @ <b>" .   print_ytl($max_gain['reverse']['price2'],4,'TL')."</b> ---> SAT @ <b>" .   print_ytl($max_gain['reverse']['price1'],4,'USD') ."</b>";
       
       
       
@@ -295,29 +222,16 @@ function get_cur(){
 
                 
             
-    $urlm = "https://www.sansmetre.com/dyno4/fiat_cur_get.php";
+    $urlm = "http://www.atlasport.net/dyno4/fiat_cur_get.php";
       
       $ch = curl_init();
       $timeout = 5;
 
       curl_setopt($ch, CURLOPT_URL, $urlm);
-
+      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
       curl_setopt($ch, CURLOPT_HEADER, false);
       curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
-      curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-          
-      
-        curl_setopt($ch, CURLOPT_ENCODING, "");
-          curl_setopt($ch, CURLOPT_MAXREDIRS, 10);
-            curl_setopt($ch, CURLOPT_TIMEOUT, 30);
-              curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
-                curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
-                curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-                  "Cache-Control: no-cache"
-                ));
-
 
       $data = curl_exec($ch);
 
@@ -327,26 +241,10 @@ function get_cur(){
 
 
 //kraken_coins('ADA');
-
-putenv("TZ=Europe/Istanbul");
-date_default_timezone_set('Europe/Istanbul');
-function acilma_suresi()
-{
-    $time = explode(" ", microtime());
-    $usec = (double)$time[0];
-    $sec = (double)$time[1];
-    return $sec + $usec;
-}
-$saymaya_basla = acilma_suresi();
-
-
-
 get_cur();
 
-btcturk_coins($i_s,$i_e,$mantik);
-echo "<br /><br />";
-$saymayi_bitir = acilma_suresi();
-$basla = $saymayi_bitir - $saymaya_basla;
-echo $basla;
+btcturk_coins();
+
+
 
 ?>
