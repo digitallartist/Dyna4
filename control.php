@@ -143,7 +143,7 @@ function kraken_coins($name,$jkl,$i_e,$mantik){
       //var_dump($json_data['error']);
       if(count($json_data['error'])==0) {
 
-      $urlm = "https://www.sansmetre.com/dyno4/cycle_all.php?m1=".$name;
+      $urlm = "https://sansmetre.com/cycle_all.php?m1=".$name;
       //  $urlm = "https://www.google.com";
 
       $curl = curl_init();
@@ -183,7 +183,7 @@ function kraken_coins($name,$jkl,$i_e,$mantik){
     echo $q5u;
    
     $q5u="UPDATE withdraw_durations SET current_price='" .  $datam2['straight']['price'] . "', withdraw_fee_usd=withdraw_fee*" .  $datam2['straight']['price'] . " WHERE name='" . $name . "'";
-    echo $q5u;
+    //echo $q5u;
     $r5u = @mysqli_query ($dbc, $q5u); // Run the query.
 
 
