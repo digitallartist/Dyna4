@@ -180,7 +180,7 @@ function kraken_coins($name,$jkl,$i_e,$mantik){
   
     //  var_dump($datam2);
     
-    echo $q5u;
+ 
    
     $q5u="UPDATE withdraw_durations SET current_price='" .  $datam2['straight']['price'] . "', withdraw_fee_usd=withdraw_fee*" .  $datam2['straight']['price'] . " WHERE name='" . $name . "'";
     //echo $q5u;
