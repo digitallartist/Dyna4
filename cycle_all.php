@@ -29,7 +29,7 @@ $saymaya_basla = acilma_suresi();
 function get_cur(){
   
 
-    $urlm = "http://www.atlasport.net/dyno4/fiat_cur_get.php";
+    $urlm = "https://sansmetre.com/fiat_cur_get.php";
       
       $ch = curl_init();
       $timeout = 5;
