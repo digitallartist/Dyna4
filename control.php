@@ -135,6 +135,10 @@ function kraken_coins($name,$jkl,$i_e,$mantik){
     
     if($name=='LUNC')
     $name_control='LUNA';
+
+    $url="https://sansmetre.com/fiat_cur_get.php";
+    $json = file_get_contents($url);
+    $json_data = json_decode($json, true);
     
       $url="https://api.kraken.com/0/public/AssetPairs?pair=" . $name_control . "USD";
       $json = file_get_contents($url);
@@ -183,7 +187,7 @@ function kraken_coins($name,$jkl,$i_e,$mantik){
  
    
     $q5u="UPDATE withdraw_durations SET current_price='" .  $datam2['straight']['price'] . "', withdraw_fee_usd=withdraw_fee*" .  $datam2['straight']['price'] . " WHERE name='" . $name . "'";
-    echo $q5u;
+   // echo $q5u;
     $r5u = @mysqli_query ($dbc, $q5u); // Run the query.
 
 
