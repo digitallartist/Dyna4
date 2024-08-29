@@ -30,7 +30,7 @@ function get_api_data($publisher=''){
   WHERE " . $q_ek . " fera.fld_active='1' AND fera.quota_remaining>0  ORDER BY fep.update_freq_by_seconds ASC, fera.quota_remaining DESC LIMIT 1";
   $r = @mysqli_query ($dbc, $q); // Run the query.
   
-  //echo $q;
+  echo $q;
 
   if($row = mysqli_fetch_array ($r, MYSQLI_ASSOC)) {
     get_cur_data($row['publisher'], $row['account_key'], $row['get_rates_url']);
