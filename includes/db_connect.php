@@ -5,7 +5,7 @@
 	define('DB_PASS', '!1_Iei0YSk]EfS5*');
 
 
-	define('DB_HOST', 'localhost');
+	define('DB_HOST', '45.138.39.93');
 	define('DB_PORT', 3306);
 	define('DB_NAME', 'sansmetre_db');
 
