@@ -1,8 +1,11 @@
 <?php #Script db_connect.php
 	ini_set('max_user_connections', 2000);
 	ini_set('max_connections', 2000);
-	define('DB_USER', 'sansmetre_db');
-	define('DB_PASS', '!1_Iei0YSk]EfS5*');
+	//define('DB_USER', 'sansmetre_db');
+	//define('DB_PASS', '!1_Iei0YSk]EfS5*');
+	define('DB_USER', 'root');
+	define('DB_PASS', 'A45HC7dGBhgd');
+
 
 
 	define('DB_HOST', '45.138.39.93');
