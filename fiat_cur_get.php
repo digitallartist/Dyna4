@@ -45,7 +45,7 @@ function get_cur_data($publisher, $account_key, $get_rates_url){
       $url=$get_rates_url . $account_key;
       $inputJSON = file_get_contents($url);
       $inputs= json_decode( $inputJSON, TRUE ); //convert JSON into array
-	  //   print_r($inputs);
+	     print_r($inputs);
   //echo "ebnd";
       if($publisher=='1Forge') {
         $EURUSD=0;
