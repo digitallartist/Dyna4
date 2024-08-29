@@ -10,7 +10,7 @@
 
 	define('DB_HOST', '45.138.39.93');
 	define('DB_PORT', 3306);
-	define('DB_NAME', 'sansmetre_db');
+	define('DB_NAME', 'dynaWorks');
 
 	$dbc = @mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME, DB_PORT) or die('Sistem hatası:' . mysqli_connect_error());
 	@mysqli_query($dbc, "SET NAMES 'utf8'");
