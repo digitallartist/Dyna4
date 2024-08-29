@@ -36,8 +36,10 @@ function get_api_data($publisher=''){
     echo " adsd sad sd";
     get_cur_data($row['publisher'], $row['account_key'], $row['get_rates_url']);
 
-    echo " zzzzz ";
+
   }
+
+  echo " zzzzz ";
 }
 
 function get_cur_data($publisher, $account_key, $get_rates_url){
