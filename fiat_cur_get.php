@@ -33,7 +33,10 @@ function get_api_data($publisher=''){
   echo $q;
 
   if($row = mysqli_fetch_array ($r, MYSQLI_ASSOC)) {
+    echo " adsd sad sd";
     get_cur_data($row['publisher'], $row['account_key'], $row['get_rates_url']);
+
+    echo " zzzzz ";
   }
 }
 
